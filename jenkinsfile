@@ -1,0 +1,18 @@
+pipeline {
+agent any
+  stages {
+     stages ('Bulid') {
+        steps {
+        echo 'Buildling..'
+ }
+}
+stages('Test') {
+steps{
+echo 'Testing..'
+}
+}
+stages('Deploy'){
+steps{
+echo 'Deploying..'
+}
+}
